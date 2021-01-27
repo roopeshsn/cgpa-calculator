@@ -29,6 +29,7 @@ form {
   margin: 20px auto;
   border-radius: 10px;
   padding: 30px 20px;
+  color: black;
 }
 
 .course {
@@ -45,8 +46,13 @@ input {
   margin: 10px;
 }
 
+label {
+  font-size: 18px;
+}
+
 input {
   border: 2px solid #80d4ff;
+  font-size: 16px;
 }
 
 .end {
@@ -99,7 +105,11 @@ footer {
   color: #e31b23;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
+  body {
+    background: white;
+  }
+
   form {
     max-width: auto;
   }
