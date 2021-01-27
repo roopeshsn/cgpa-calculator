@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CGPA Calculator</title>
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/d787c8dd54.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #cgpa-card.open {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <i class="fas fa-calculator"></i><span>You're CGPA Calculator</span>
+    </header>
+    <form autocomplete="off" id="my-form">
+      <div class="course">
+        <h2>Enter Credit Point and Grade Point for Course-1</h2>
+        <label id="course-1-credits"><b>Credit Point</b></label>
+        <input
+          id="course-1-input-credits"
+          placeholder="Course-1 Credit Point"
+        />
+        <label id="course-1-grade-points"><b>Grade Point</b></label>
+        <input
+          id="course-1-input-grade-points"
+          placeholder="Course-1 Grade Point"
+        />
+      </div>
+
+      <div class="course">
+        <h2>Enter Credit Point and Grade Point for Course-2</h2>
+        <label id="course-2-credits"><b>Credit Point</b></label>
+        <input
+          id="course-2-input-credits"
+          placeholder="Course-2 Credit Point"
+        />
+        <label id="course-2-grade-points"><b>Grade Point</b></label>
+        <input
+          id="course-2-input-grade-points"
+          placeholder="Course-2 Grade Point"
+        />
+      </div>
+
+      <div class="course">
+        <h2>Enter Credit Point and Grade Point for Course-3</h2>
+        <label id="course-3-credits"><b>Credit Point</b></label>
+        <input
+          id="course-3-input-credits"
+          placeholder="Course-3 Credit Point"
+        />
+        <label id="course-3-grade-points"><b>Grade Point</b></label>
+        <input
+          id="course-3-input-grade-points"
+          placeholder="Course-3 Grade Point"
+        />
+      </div>
+
+      <div class="course">
+        <h2>Enter Credit Point and Grade Point for Course-4</h2>
+        <label id="course-4-credits"><b>Credit Point</b></label>
+        <input
+          id="course-4-input-credits"
+          placeholder="Course-4 Credit Point"
+        />
+        <label id="course-4-grade-points"><b>Grade Point</b></label>
+        <input
+          id="course-4-input-grade-points"
+          placeholder="Course-4 Grade Point"
+        />
+      </div>
+
+      <div class="course">
+        <h2>Enter Credit Point and Grade Point for Course-5</h2>
+        <label id="course-5-credits"><b>Credit Point</b></label>
+        <input
+          id="course-5-input-credits"
+          placeholder="Course-5 Credit Point"
+        />
+        <label id="course-5-grade-points"><b>Grade Point</b></label>
+        <input
+          id="course-5-input-grade-points"
+          placeholder="Course-5 Grade Point"
+        />
+      </div>
+
+      <div class="course">
+        <h2>Enter Credit Point and Grade Point for Course-6</h2>
+        <label id="course-6-credits"><b>Credit Point</b></label>
+        <input
+          id="course-6-input-credits"
+          placeholder="Course-6 Credit Point"
+        />
+        <label id="course-6-grade-points"><b>Grade Point</b></label>
+        <input
+          id="course-6-input-grade-points"
+          placeholder="Course-6 Grade Point"
+        />
+      </div>
+
+      <div class="course">
+        <h2>Enter Credit Point and Grade Point for Course-7</h2>
+        <label id="course-7-credits"><b>Credit Point</b></label>
+        <input
+          id="course-7-input-credits"
+          placeholder="Course-7 Credit Point"
+        />
+        <label id="course-7-grade-points"><b>Grade Point</b></label>
+        <input
+          id="course-7-input-grade-points"
+          placeholder="Course-7 Grade Point"
+        />
+      </div>
+
+      <div class="course">
+        <h2>Enter Credit Point and Grade Point for Course-8</h2>
+        <label id="course-8-credits"><b>Credit Point</b></label>
+        <input
+          id="course-8-input-credits"
+          placeholder="Course-8 Credit Point"
+        />
+        <label id="course-8-grade-points"><b>Grade Point</b></label>
+        <input
+          id="course-8-input-grade-points"
+          placeholder="Course-8 Grade Point"
+        />
+      </div>
+
+      <div class="end">
+        <div>
+          <button id="submit-button">Get CGPA</button>
+          <button id="reset-button">Reset</button>
+        </div>
+        <div class="cgpa" id="cgpa-card">
+          <h3>Your Total Credits</h3>
+          <div id="total-credits"></div>
+          <h3>Your Total Credit Points</h3>
+          <div id="total-credit-points"></div>
+          <h3>Your CGPA</h3>
+          <div id="cgpa"></div>
+        </div>
+      </div>
+    </form>
+
+    <footer>Made with <i class="fas fa-heart"></i> by Roopesh</footer>
+  </body>
+</html>
