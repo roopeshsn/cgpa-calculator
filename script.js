@@ -1,16 +1,7 @@
 const submitBtn = document.querySelector("#submit-button")
 const resetBtn = document.querySelector("#reset-button")
 const cgpaCard = document.querySelector("#cgpa-card")
-
-submitBtn.addEventListener("click", (e) => {
-  e.preventDefault()
-  operation()
-  cgpaCard.classList.add("open") //document.getElementById("my-form").reset()
-})
-
-resetBtn.addEventListener("click", (e) => {
-  document.getElementById("my-form").reset()
-})
+var reference = 0
 
 function operation() {
   const courseOneCredits = Number(
@@ -68,7 +59,6 @@ function operation() {
   const courseEightGradePoints = Number(
     document.getElementById("course-8-input-grade-points").value
   )
-
   const totalCredits =
     courseOneCredits +
     courseTwoCredits +
@@ -80,6 +70,8 @@ function operation() {
     courseEightCredits
 
   document.getElementById("total-credits").innerHTML = totalCredits
+
+  reference = totalCredits
 
   const courseOneCreditPoints = courseOneCredits * courseOneGradePoints
   const courseTwoCreditPoints = courseTwoCredits * courseTwoGradePoints
@@ -104,5 +96,16 @@ function operation() {
 
   const cgpa = totalCreditPoints / totalCredits
 
-  document.getElementById("cgpa").innerHTML = cgpa
+  document.getElementById("your-cgpa").innerHTML = cgpa
 }
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault()
+  operation()
+  if (reference == 0) return
+  cgpaCard.classList.add("open") //document.getElementById("my-form").reset()
+})
+
+resetBtn.addEventListener("click", (e) => {
+  document.getElementById("my-form").reset()
+})
